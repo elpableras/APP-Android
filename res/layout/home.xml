@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewNote"
+        android:layout_alignRight="@+id/tfasig"
+        android:layout_below="@+id/textViewNote"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/tfNote" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tfasig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/asig"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btNotasFecha"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNote"
+        android:layout_below="@+id/textViewFecha"
+        android:drawableRight="@drawable/calendar3"
+        android:text="@string/btNotasFecha" />
+
+    <Button
+        android:id="@+id/btNotasHoy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNote"
+        android:layout_below="@+id/textViewFechaH"
+        android:drawableRight="@drawable/calendar3"
+        android:text="@string/btNotasHoy" />
+
+    <EditText
+        android:id="@+id/editTextCoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNote"
+        android:layout_alignRight="@+id/editTextFechaH"
+        android:layout_below="@+id/textViewCoord"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="@string/tfCoord" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btNotasFecha"
+        android:layout_alignBottom="@+id/btNotasFecha"
+        android:layout_alignRight="@+id/editTextNote"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/btNotasFecha"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/tfFecha" />
+
+    <EditText
+        android:id="@+id/editTextFechaH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btNotasHoy"
+        android:layout_alignBottom="@+id/btNotasHoy"
+        android:layout_alignLeft="@+id/editTextFecha"
+        android:layout_alignRight="@+id/editTextFecha"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/tfFechaH" />
+
+    <TextView
+        android:id="@+id/textViewFechaH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tfasig"
+        android:layout_below="@+id/btNotasFecha"
+        android:text="@string/lbFechaHora1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewCoord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewFechaH"
+        android:layout_below="@+id/btNotasHoy"
+        android:layout_marginTop="23dp"
+        android:text="@string/lbCoord"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tfhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextFecha"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/home"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textViewNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewFecha"
+        android:layout_below="@+id/tfhome"
+        android:layout_marginTop="15dp"
+        android:text="@string/lbTitle"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewFechaH"
+        android:layout_below="@+id/editTextNote"
+        android:layout_marginTop="111dp"
+        android:text="@string/lbFechaHora2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/location"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btLoadImg"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNote"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/textViewImg"
+        android:drawableTop="@drawable/icon_lupa"
+        android:text="@string/btLoadImg" />
+
+    <TextView
+        android:id="@+id/textViewImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btLoadImg"
+        android:layout_alignLeft="@+id/textViewFecha"
+        android:layout_marginBottom="21dp"
+        android:text="@string/lbImgNote"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btCamara"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btLoadImg"
+        android:layout_alignRight="@+id/editTextNote"
+        android:layout_alignTop="@+id/btLoadImg"
+        android:drawableTop="@drawable/icono_camara"
+        android:text="@string/btCamara" />
+
+    <Button
+        android:id="@+id/btSpeak"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewImg"
+        android:layout_alignLeft="@+id/textViewImg"
+        android:drawableLeft="@drawable/ars"
+        android:text="@string/btSpeak" />
+
+    <Button
+        android:id="@+id/btList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btSave"
+        android:layout_alignBottom="@+id/btSave"
+        android:layout_alignLeft="@+id/btLoadImg"
+        android:text="@string/btList" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextCoord"
+        android:layout_toLeftOf="@+id/btList"
+        android:text="@string/btSave" />
+
+</RelativeLayout>
