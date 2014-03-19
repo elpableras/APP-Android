@@ -2,10 +2,10 @@ APP-Android
 ===========
 1. Varias actividades con intercambio de datos entre ellas
 Tenemos varias actividades y entre algunas de ellas se intercambian datos.
-- Splash, que es la pantalla de inicialización
-- Home, donde se produce la mayoría de acciones sobre la aplicación
-- Date, que retorna la fecha y hora por medio del DatePicker y del TimePicker
-- ListNotes, otra actividad donde creamos un adaptador para mostrar la lista de notas con su correspondiente imagen. Además este tiene la opción de poder eliminar las notas y la lista se actualiza inmediatamente
+  - Splash, que es la pantalla de inicialización
+  - Home, donde se produce la mayoría de acciones sobre la aplicación
+  - Date, que retorna la fecha y hora por medio del DatePicker y del TimePicker
+  - ListNotes, otra actividad donde creamos un adaptador para mostrar la lista de notas con su correspondiente imagen. Además este tiene la opción de poder eliminar las notas y la lista se actualiza inmediatamente
 
 2. Manejo y gestión de imágenes
 Está opción la manejamos en la actividad Home por medio del acceso a la cámara del teléfono y el acceso al almacén de imágenes del teléfono, obtenemos la dirección del Path que luego se incluirá como dato en la nota.
@@ -30,8 +30,8 @@ Se utiliza la geolocalización, del usuario para almacenar la dirección desde d
 8. Empaquetado de la aplicación para su posible subida al market
 
 9. Aporte
-- Utilización DialogFragment, para mostrar un dialogo, para la activación del GPS.
-- Utilización Thread, para mostrar durante un tiempo una actividad y luego cerrarla (Splash).
-- Utilización JavaBenas, para encapsular los datos de la nota y poder utilizarlos con SQLite en la aplicación.
-- Menú de opciones con dos ítems, uno para salir de la aplicación y otro con mi nombre.
+  - Utilización DialogFragment, para mostrar un dialogo, para la activación del GPS.
+  - Utilización Thread, para mostrar durante un tiempo una actividad y luego cerrarla (Splash).
+  - Utilización JavaBenas, para encapsular los datos de la nota y poder utilizarlos con SQLite en la aplicación.
+  - Menú de opciones con dos ítems, uno para salir de la aplicación y otro con mi nombre.
 
