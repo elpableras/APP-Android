@@ -29,9 +29,9 @@ The camera sensor is used for take photographs and used it as data attached to t
 The application is possible upload to market
 
 8. Other things
-- I use the DialogFragment, to display a dialog to the activation of the GPS.
-- I use thread, to show for a while and then close an activity (Splash).
-- I use JavaBenas to encapsulate the data of the note and can be used with SQLite in the application.
-- Options menu with two items, one for exit of the application and the other has information about me.
+ * I use the DialogFragment, to display a dialog to the activation of the GPS.
+ * I use thread, to show for a while and then close an activity (Splash).
+ * I use JavaBenas to encapsulate the data of the note and can be used with SQLite in the application.
+ * Options menu with two items, one for exit of the application and the other has information about me.
 
 
