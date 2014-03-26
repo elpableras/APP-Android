@@ -5,10 +5,10 @@ Development of an App for Android, this app can serve as store notes, the functi
 
 1. Activities
 Various activities to exchange data between them, like:
-- Splash, is the initialization screen
-- Home, where is the principal screen with the options of the application
-- Date, return the date and time using a DatePicker and a TimePicker
-- ListNotes, activity where it is created an adapter to display the list of notes with the corresponding image. Also it has the option to remove the notes and the list will be updated immediately.
+ * Splash, is the initialization screen
+ * Home, where is the principal screen with the options of the application
+ * Date, return the date and time using a DatePicker and a TimePicker
+ * ListNotes, activity where it is created an adapter to display the list of notes with the corresponding image. Also it has the option to remove the notes and the list will be updated immediately.
 
 2. Management and Image Management
 This option is handled in the Home activity, through access to the phone's camera and access to the image store on your phone, get the URL Path and this is then included in the listnote.
